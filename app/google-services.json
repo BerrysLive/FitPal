@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "347425610370",
+    "project_id": "guardian-angel-cdefa",
+    "storage_bucket": "guardian-angel-cdefa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347425610370:android:fa176d2914eda13682f29b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8-xk67nbKV44Xn1KG8KGHFnres0Ebj4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
