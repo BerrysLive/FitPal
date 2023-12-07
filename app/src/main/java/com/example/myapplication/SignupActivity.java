@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -18,7 +19,7 @@ public class SignupActivity extends AppCompatActivity {
     EditText editText_password;
     EditText editText_confirm_password;
     Button register_button;
-
+    Button return_button;
     private FirebaseAuth mAuth;
 
     @Override
@@ -32,7 +33,7 @@ public class SignupActivity extends AppCompatActivity {
         editText_password = findViewById(R.id.password);
         editText_confirm_password = findViewById(R.id.confirmpassword);
         register_button = findViewById(R.id.registerbutton);
-
+        return_button = findViewById(R.id.return_to_login);
         register_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,5 +78,16 @@ public class SignupActivity extends AppCompatActivity {
                         });
             }
         });
+        return_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                return_to_login();
+            }
+        });
+    }
+
+    public void return_to_login(){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

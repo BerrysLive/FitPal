@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Login successful
                             Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
-//                            login();
+                            login();
                         } else {
                             // Login failed
                             Toast.makeText(LoginActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();
@@ -68,10 +68,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-//    public void login() {
-//        Intent intent = new Intent(this, MainActivity.class);
-//        startActivity(intent);
-//    }
+    public void login() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
     public void sign_up(){
         Intent intent = new Intent(this, SignupActivity.class);
         startActivity(intent);
