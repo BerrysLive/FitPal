@@ -31,10 +31,14 @@ public class LoginActivity extends AppCompatActivity {
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        email = findViewById(R.id.register_email);
-        password = findViewById(R.id.password);
-        Login_Button = findViewById(R.id.loginButton);
-        Sign_up_Button = findViewById(R.id.signupButton);
+
+        //Name of edit text from amove = findViewByID(R.id.name from the xml);
+
+
+        email = findViewById(R.id.LInputEmail);
+        password = findViewById(R.id.LInputPassword);
+        Login_Button = findViewById(R.id.LoginButton);
+        Sign_up_Button = findViewById(R.id.RegisterButton);
 
         Login_Button.setOnClickListener(new View.OnClickListener() {
             @Override

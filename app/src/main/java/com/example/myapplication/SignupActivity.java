@@ -20,6 +20,8 @@ public class SignupActivity extends AppCompatActivity {
     EditText editText_confirm_password;
     Button register_button;
     Button return_button;
+    EditText first_name;
+    EditText last_name;
     private FirebaseAuth mAuth;
 
     @Override
@@ -29,11 +31,13 @@ public class SignupActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        editText_email = findViewById(R.id.register_email);
-        editText_password = findViewById(R.id.password);
-        editText_confirm_password = findViewById(R.id.confirmpassword);
-        register_button = findViewById(R.id.registerbutton);
-        return_button = findViewById(R.id.return_to_login);
+        editText_email = findViewById(R.id.InputEmail);
+        editText_password = findViewById(R.id.InputPassword);
+        editText_confirm_password = findViewById(R.id.InputConfirmPassword);
+        register_button = findViewById(R.id.RegisterButtonR);
+        return_button = findViewById(R.id.ReturnButton);
+        first_name = findViewById(R.id.InputFirstName);
+        last_name = findViewById(R.id.InputLastName);
         register_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
