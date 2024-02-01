@@ -52,7 +52,8 @@ android {
 }
 
 dependencies {
-    implementation ("androidx.health:health-connect-client:1.0.0")
+    implementation ("androidx.health.connect:connect-client:1.1.0-alpha02")
+
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-auth:22.1.2")
     implementation("com.google.firebase:firebase-auth-ktx:22.1.2")
